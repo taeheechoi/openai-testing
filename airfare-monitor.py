@@ -1,4 +1,4 @@
-# Write by OpenAI
+# Written by OpenAI
 # Question: write a python code that monitors airfare changes
 # Issues: import time, bs4, kayak blocked due to security check "I'm not a robot"
 

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>User Creation Form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			text-align: center;
+		}
+
+		form {
+			margin: 20px auto;
+			padding: 20px;
+			background-color: #eee;
+			border: 2px solid #ccc;
+			border-radius: 10px;
+			width: 300px;
+			position: relative;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+
+		input[type="text"], input[type="email"], input[type="password"] {
+			width: 100%;
+			padding: 5px;
+			border-radius: 3px;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			margin-bottom: 20px;
+		}
+
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border-radius: 5px;
+			border: none;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username">
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email">
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password">
+
+		<input type="submit" value="Create User" onclick="createUser(event)">
+	</form>
+
+	<script>
+		function createUser(event) {
+			event.preventDefault();
+
+			var usernameInput = document.getElementById("username");
+			var emailInput = document.getElementById("email");
+			var passwordInput = document.getElementById("password");
+
+			var newUser = {
+				username: usernameInput.value,
+				email: emailInput.value,
+				password: passwordInput.value
+			};
+
+			// Send the user data to the server for processing
+			// using AJAX or other means
+			console.log(newUser);
+		}
+	</script>
+</body>
+</html>

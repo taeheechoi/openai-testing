@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Toddler Game</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			text-align: center;
+		}
+
+		#game-area {
+			margin: 20px auto;
+			padding: 20px;
+			background-color: #eee;
+			border: 2px solid #ccc;
+			border-radius: 10px;
+			width: 300px;
+			height: 300px;
+			position: relative;
+		}
+
+		#target {
+			width: 50px;
+			height: 50px;
+			background-color: red;
+			border-radius: 50%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			cursor: pointer;
+		}
+
+		#score {
+			font-size: 24px;
+			font-weight: bold;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div id="game-area">
+		<div id="target"></div>
+	</div>
+	<div id="score">Score: 0</div>
+
+	<script>
+		var score = 0;
+		var gameArea = document.getElementById("game-area");
+		var target = document.getElementById("target");
+		var scoreDisplay = document.getElementById("score");
+
+		target.addEventListener("click", function() {
+			score++;
+			scoreDisplay.textContent = "Score: " + score;
+			moveTarget();
+		});
+
+		function moveTarget() {
+			var x = Math.floor(Math.random() * (gameArea.clientWidth - target.clientWidth));
+			var y = Math.floor(Math.random() * (gameArea.clientHeight - target.clientHeight));
+			target.style.left = x + "px";
+			target.style.top = y + "px";
+		}
+	</script>
+</body>
+</html>

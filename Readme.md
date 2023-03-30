@@ -7,6 +7,9 @@
 | lotto-numbers.py | write python code generating lotto numbers | |:white_check_mark:|
 | toddler-game.html | write a game program in javascript for toddler | This is a simple game where the toddler has to click on the red target that moves randomly around the game area. Every time they click on the target, their score goes up by one. |:white_check_mark:|
 | user-creation.html | write a form for user creation in javascript | This form includes input fields for the user's username, email, and password, as well as a submit button that triggers the createUser() function when clicked. The function creates a JavaScript object representing the new user and logs it to the console for testing purposes. You could modify this function to send the user data to a server for processing using AJAX or other means. | :white_check_mark: |
+| concur-oracle-integration.js | write a program that integrates between Concur and Oracle | This program first retrieves an access token from the Concur API using your Concur client ID and client secret. It then uses the access token to retrieve a list of expense reports from the Concur API. Finally, it inserts the expense report data into an Oracle database using the Oracle Database Connector.
+| concur-epicor-integration.js | write a program that integrates between Concur and Epicor | TThis program first retrieves an access token from the Concur API using your Concur client ID and client secret. It then uses the access token to retrieve a list of expense reports from the Concur API. For each expense report, it maps the Concur expense data to Epicor format and creates a new expense report in Epicor using the Epicor REST API.
+You would need to replace the placeholders in this code (e.g. YOUR_CONCUR_CLIENT_ID, YOUR_CONCUR_CLIENT_SECRET, YOUR_EPICOR_SERVER) with your actual Concur and Epicor credentials, as well as modify the map_expense_to_epicor function to match the structure of your Epicor expense report data.| |
 
 
 

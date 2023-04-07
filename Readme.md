@@ -11,6 +11,7 @@
 | concur-epicor-integration.js | write a program that integrates between Concur and Epicor | This program first retrieves an access token from the Concur API using your Concur client ID and client secret. It then uses the access token to retrieve a list of expense reports from the Concur API. For each expense report, it maps the Concur expense data to Epicor format and creates a new expense report in Epicor using the Epicor REST API. | |
 | simple-child-game | create a child game in javascript | a simple child game in JavaScript! Let's create a game where the player has to click on an image of a fruit as many times as possible within a certain amount of time. | :white_check_mark:|
 | time-and-task-tracker | write a program that keeps tracking time and task | a sample code in Python that can help you keep track of time and tasks | :white_check_mark:|
+| full-stack-python-react | write rest backend server in python and front end in react | a simple example of a RESTful backend server written in Python using the Flask framework and a frontend in React. | :white_check_mark:|
 
 ### Reference:
 - https://chat.openai.com/chat

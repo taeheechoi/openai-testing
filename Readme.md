@@ -13,6 +13,7 @@
 | time-and-task-tracker | write a program that keeps tracking time and task | a sample code in Python that can help you keep track of time and tasks | :white_check_mark:|
 | fullstack-python-react | write rest backend server in python and front end in react | a simple example of a RESTful backend server written in Python using the Flask framework and a frontend in React. | :white_check_mark:|
 | websocket-python-react | show me example of websocket and react| an example of a React application that uses websockets to display real-time updates from a Python server: | :white_check_mark:|
+| epicor-reset-password-react | write react page for reset password that requires user id and email and rest post and make pretty using material ui| React page for the password reset form that now requires the user ID and email, and is styled using Material UI | :white_check_mark:|
 
 ### Reference:
 - https://chat.openai.com/chat
